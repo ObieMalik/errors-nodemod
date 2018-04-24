@@ -45,6 +45,9 @@ jspm_packages
 # configurations
 .config
 
+# caches
+.tscache
+
 !**/install/**/*
 !**/build/**/*.*
 !**/Gruntfile.js
