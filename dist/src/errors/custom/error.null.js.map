@@ -1,0 +1,1 @@
+{"version":3,"file":"error.null.js","sourceRoot":"","sources":["../../../../src/errors/custom/error.null.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,SAAU,SAAQ,sBAAS;CAAI;AAA5C,8BAA4C","sourcesContent":["import { BaseError } from '../error.base';\n\n/**\n * Null Error\n */\nexport class NullError extends BaseError { }"]}

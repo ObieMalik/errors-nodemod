@@ -1,0 +1,1 @@
+{"version":3,"file":"error.notimplemented.js","sourceRoot":"","sources":["../../../../src/errors/custom/error.notimplemented.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,mBAAoB,SAAQ,sBAAS;CAAI;AAAtD,kDAAsD","sourcesContent":["import { BaseError } from '../error.base';\n\n/**\n * Not Implemented Error\n */\nexport class NotImplementedError extends BaseError { }"]}

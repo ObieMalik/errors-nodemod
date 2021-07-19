@@ -50,5 +50,6 @@ jspm_packages
 
 !**/install/**/*
 !**/build/**/*.*
+!**/dist/**/*.*
 !**/Gruntfile.js
 !**/test/**/*.js

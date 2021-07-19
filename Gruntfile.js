@@ -1,5 +1,4 @@
 module.exports = function (grunt) {
-	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-eslint");
 	grunt.loadNpmTasks("grunt-ts");
@@ -53,12 +52,24 @@ module.exports = function (grunt) {
 				'test/**/*.ts',
 				'!**/*.d.ts'
 			], // files to watch
-			tasks: [
-				'ts:build',
-				'eslint:all'
-			], // tasks to run
+			tasks: (() => {
+				let x = [
+					'eslint'
+				]
+
+				x = grunt.option('test') ? [...x, 'run:test'] : x
+				x = grunt.option('build') ? [...x, 'ts:build'] : x
+
+				return x
+			})(), // tasks to run
 			options: {
 				spawn: false // makes this task faster
+			},
+			configFiles: {
+				files: ['gruntfile.js', 'config/*.js'],
+				options: {
+					reload: true
+				}
 			}
 		},
 		ts: {
@@ -80,11 +91,19 @@ module.exports = function (grunt) {
 	grunt.registerTask("default", [
 		"eslint",
 		"ts:build",
+		"run:test",
 		"watch"
 	]);
 
+	grunt.registerTask("build", [
+		"ts:build"
+	]);
+
+	grunt.registerTask("lint", [
+		"eslint"
+	]);
+
 	grunt.registerTask("test", [
-		"ts:build",
 		"run:test"
 	]);
 };

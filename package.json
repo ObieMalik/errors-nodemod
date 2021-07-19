@@ -1,16 +1,16 @@
 {
-	"name": "@om-node/errors",
-	"version": "1.0.0",
-	"description": "",
+	"name": "@mo-node/errors",
+	"version": "2.0.0",
+	"description": "Node.js error library with custom error types and error identifier class for more structured error handling.",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"files": [
 		"./dist/src"
 	],
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/obiemalik/node-logger.git"
-    },
+		"type": "git",
+		"url": "https://github.com/obiemalik/node-errors.git"
+	},
 	"author": "Obie Malik",
 	"license": "ISC",
 	"devDependencies": {
