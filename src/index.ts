@@ -1,10 +1,10 @@
-import { AuthorizationError } from './errors/custom/error.authorization'
-import { ConflictError } from './errors/custom/error.conflict'
-import { DuplicateError } from './errors/custom/error.duplicate'
-import { ExpirationError } from './errors/custom/error.expiration'
-import { NotImplementedError } from './errors/custom/error.notimplemented'
-import { NullError } from './errors/custom/error.null'
-import { ValidationError } from './errors/custom/error.validation'
+import { AuthorizationError } from './errors/custom/authorization-error'
+import { ConflictError } from './errors/custom/conflict-error'
+import { DuplicateError } from './errors/custom/duplicate-error'
+import { ExpirationError } from './errors/custom/expiration-error'
+import { NotImplementedError } from './errors/custom/not-implemented-error'
+import { NullError } from './errors/custom/null-error'
+import { ValidationError } from './errors/custom/validation-error'
 
 export {
     AuthorizationError,

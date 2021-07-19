@@ -1,4 +1,4 @@
-import { BaseError } from '../error.base';
+import { BaseError } from '../base-error';
 
 /**
  * Authorization Error

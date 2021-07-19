@@ -1,4 +1,4 @@
-import { ErrorId } from './error.id'
+import { ErrorId } from './error-id'
 
 /**
  * Base Error class. All custom error classes must extend from this class.

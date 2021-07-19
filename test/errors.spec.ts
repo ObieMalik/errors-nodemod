@@ -1,4 +1,4 @@
-import { ErrorId } from '../src/errors/error.id'
+import { ErrorId } from '../src/errors/error-id'
 import {
     AuthorizationError,
     ConflictError,
