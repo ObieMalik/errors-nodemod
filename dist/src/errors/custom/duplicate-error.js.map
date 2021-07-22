@@ -1,0 +1,1 @@
+{"version":3,"file":"duplicate-error.js","sourceRoot":"","sources":["../../../../src/errors/custom/duplicate-error.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,cAAe,SAAQ,sBAAS;CAAI;AAAjD,wCAAiD","sourcesContent":["import { BaseError } from '../base-error';\n\n/**\n * Duplicate Error\n */\nexport class DuplicateError extends BaseError { }"]}

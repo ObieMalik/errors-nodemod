@@ -47,6 +47,3 @@ jspm_packages
 
 # caches
 .tscache
-
-**/dist/**/*.*
-**/build/**/*.*
