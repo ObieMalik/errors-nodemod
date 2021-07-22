@@ -90,12 +90,12 @@ module.exports = function (grunt) {
 
 	grunt.registerTask("default", [
 		"eslint",
-		"ts:build",
 		"run:test",
-		"watch"
+		"ts:build"
 	]);
 
 	grunt.registerTask("build", [
+		"eslint",
 		"ts:build"
 	]);
 

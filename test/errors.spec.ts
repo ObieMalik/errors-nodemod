@@ -1,13 +1,24 @@
-import { ErrorId } from '../src/errors/error-id'
 import {
+    AbstractError,
     AuthorizationError,
+    BaseError,
     ConflictError,
     DuplicateError,
+    ErrorId,
     ExpirationError,
     NotImplementedError,
     NullError,
     ValidationError
 } from '../src/index'
+
+test('should not be able to instantiate the BaseError abstract class', () => {
+    try {
+        throw new BaseError('This is an error message string.')
+    } catch (ex) {
+        const abstractError = new AbstractError()
+        expect(ex.message).toEqual(abstractError.message)
+    }
+})
 
 test('should be able to throw a validation error', () => {
     try {

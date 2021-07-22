@@ -1,3 +1,4 @@
+import { AbstractError } from './abstract-error'
 import { ErrorId } from './error-id'
 
 /**
@@ -16,6 +17,9 @@ export class BaseError extends Error {
             error.message : error
 
         super(message)
+
+        if (this.constructor === BaseError)
+            throw new AbstractError()
 
         if (error instanceof ErrorId)
             this._errorId = error
