@@ -1,1 +1,0 @@
-{"version":3,"file":"conflict-error.js","sourceRoot":"","sources":["../../../../src/errors/custom/conflict-error.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,aAAc,SAAQ,sBAAS;CAAI;AAAhD,sCAAgD","sourcesContent":["import { BaseError } from '../base-error';\n\n/**\n * Conflict Error\n */\nexport class ConflictError extends BaseError { }"]}

@@ -1,1 +1,0 @@
-{"version":3,"file":"error.expiration.js","sourceRoot":"","sources":["../../../../src/errors/custom/error.expiration.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,eAAgB,SAAQ,sBAAS;CAAI;AAAlD,0CAAkD","sourcesContent":["import { BaseError } from '../error.base';\n\n/**\n * Expiration Error\n */\nexport class ExpirationError extends BaseError { }"]}

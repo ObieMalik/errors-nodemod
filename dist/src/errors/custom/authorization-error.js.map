@@ -1,1 +1,0 @@
-{"version":3,"file":"authorization-error.js","sourceRoot":"","sources":["../../../../src/errors/custom/authorization-error.ts"],"names":[],"mappings":";;;AAAA,8CAA0C;AAK1C,MAAa,kBAAmB,SAAQ,sBAAS;CAAI;AAArD,gDAAqD","sourcesContent":["import { BaseError } from '../base-error';\n\n/**\n * Authorization Error\n */\nexport class AuthorizationError extends BaseError { }"]}
