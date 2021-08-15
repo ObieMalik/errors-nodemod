@@ -12,14 +12,14 @@ import { ValidationError } from './errors/custom/validation-error'
 import { ErrorId } from './errors/error-id'
 
 export {
-    AbstractError,
-    AuthorizationError,
-    BaseError,
-    ConflictError,
-    DuplicateError,
-    ErrorId,
-    ExpirationError,
-    NotImplementedError,
-    NullError,
-    ValidationError
+  AbstractError,
+  AuthorizationError,
+  BaseError,
+  ConflictError,
+  DuplicateError,
+  ErrorId,
+  ExpirationError,
+  NotImplementedError,
+  NullError,
+  ValidationError
 }
